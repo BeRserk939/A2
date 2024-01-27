@@ -1,0 +1,57 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: black;
+}
+
+.outer-heating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 45px;
+	color: #fff;
+}
+
+.inner-heating {
+	height: 50px;
+	line-height: 50px;
+	font-size: 45px;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+.inner-heating span {
+	position: relative;
+	color: crimson;
+	animation: textChange 10s ease infinite;
+}
+
+@keyframes textChange {
+	0% {
+		top: -50px;
+		color: #000000;
+	}
+
+    50% {
+    	top: -150px;
+    	color: #800000;
+    }
+
+    75% {
+    	top: -200px;
+    	color: #006400;
+    }
+
+    100% {
+    	top: -250px;
+    	color: #000000;
+    }
+}
